@@ -9,5 +9,6 @@ class HigherLowerActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityHigherLowerBinding.inflate(layoutInflater)
+        setContentView(binding.root)
     }
 }
