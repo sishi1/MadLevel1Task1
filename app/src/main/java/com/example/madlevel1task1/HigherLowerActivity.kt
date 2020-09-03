@@ -31,6 +31,10 @@ class HigherLowerActivity : AppCompatActivity() {
     }
 
     private fun initViews() {
+        binding.btnHigher.setOnClickListener() { onHigherClick() }
+        binding.btnLower.setOnClickListener() { onLowerClick() }
+        binding.btnEqual.setOnClickListener() { onEqualClick() }
+
         updateUI()
     }
 
@@ -58,11 +62,15 @@ class HigherLowerActivity : AppCompatActivity() {
     }
 
     private fun onLowerClick() {
+        rollDice()
+
         if (currentThrow < lastThrow) onAnswerCorrect()
         else onAnswerIncorrect()
     }
 
     private fun onEqualClick() {
+        rollDice()
+
         if (currentThrow == lastThrow) onAnswerCorrect()
         else onAnswerIncorrect()
     }
