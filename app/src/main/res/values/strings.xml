@@ -6,4 +6,6 @@
     <string name="Button_Equals">EQUALS</string>
     <string name="Button_Higher">HIGHER</string>
     <string name="Dice_Image">Dice</string>
+    <string name="correct">Correct</string>
+    <string name="incorrect">Incorrect</string>
 </resources>
