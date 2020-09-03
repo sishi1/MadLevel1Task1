@@ -32,4 +32,10 @@ class HigherLowerActivity : AppCompatActivity() {
     private fun initViews() {
         updateUI()
     }
+
+    private fun rollDice() {
+        lastThrow = currentThrow
+        currentThrow = (1..6).random()
+        updateUI()
+    }
 }
